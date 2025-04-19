@@ -1,0 +1,20 @@
+镜像：torcheasyrec:0.7.0-pytorch2.6.0-gpu-py311-cu124-ubuntu22.04
+项目路径：/mnt/data/yolo3-pytorch
+数据集路径：/mnt/data/VOC07+12+test/VOCdevkit
+执行命令：
+apt-get update
+apt-get install -y libgl1-mesa-glx
+apt-get install -y libglib2.0-0
+python /mnt/data/yolo3-pytorch/voc_annotation.py
+python /mnt/data/yolo3-pytorch/train.py
+三方库列表：
+torchvision
+scipy
+numpy
+opencv_python
+matplotlib
+tqdm
+Pillow
+h5py
+tensorboard
+驱动设置：550.127.08
